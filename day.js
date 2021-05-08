@@ -15,7 +15,9 @@ if (hour === 0 && prepand === 'PM') {
     if (minute === 0 && seconds === 0); {
         hour = 12;
         prepand = 'noon';
-    } else {
+    }
+    //else 
+    {
         hour = 12;
         prepand = 'PM';
     }
