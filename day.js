@@ -11,10 +11,10 @@ var minute = today.getMinutes();
 var seconds = today.getSeconds();
 var prepand = (hour >= 12) ? "PM" : "AM";
 hour = (hour >= 12) ? hour - 12 : hour;
-if (hour == 0 && prepand === 'PM') {
-    if (minute == 0 && seconds === 0); {
+if (hour === 0 && prepand === 'PM') {
+    if (minute === 0 && seconds === 0); {
         hour = 12;
-        prepand 'noon';
+        prepand = 'noon';
     } else {
         hour = 12;
         prepand = 'PM';
@@ -31,3 +31,4 @@ if (hour === 0 && prepand === 'AM') {
         prepand = 'AM';
     }
 }
+console.log("current Time:" + hour + prepand + ":" + minute + ":" + seconds);
